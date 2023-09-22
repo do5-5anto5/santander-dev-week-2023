@@ -11,6 +11,7 @@ import jakarta.persistence.Id;
 @Entity(name = "tb_account")
 public class Account {
 
+    public Account(){}
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -20,9 +21,9 @@ public class Account {
 	
     String agency;
     
-    @Column(scale = 13, precision = 2)
+    @Column(precision = 13, scale = 2)
     BigDecimal balance;
-    @Column(name = "addtional_limit", scale = 13, precision = 2)
+    @Column(name = "additional_limit", precision = 13, scale = 2)
     BigDecimal limit;
 
     public Account(String number, String agency) {
