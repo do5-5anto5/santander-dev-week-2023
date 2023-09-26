@@ -14,9 +14,6 @@ import jakarta.persistence.OneToOne;
 @Entity(name = "tb_user")
 public class User {
 
-	public User() {
-	}
-
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;

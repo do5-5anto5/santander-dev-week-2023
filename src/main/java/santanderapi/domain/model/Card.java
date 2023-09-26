@@ -21,12 +21,7 @@ public class Card {
     @Column(name = "available_limit", precision = 13, scale = 2)
     BigDecimal limit;
 
-    public Card(String number, BigDecimal limit) {
-        this.number = number;
-        this.limit = limit;
-    }
-
-    public String getNumber() {
+     public String getNumber() {
         return number;
     }
 
